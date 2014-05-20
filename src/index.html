@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        html,body{
+            height: 100%;
+
+        }
+        img{
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-left: -237px;
+            margin-top:-166px;
+        }
+
+    </style>
+</head>
+<body>
+     <img src="./Hypnotoad.gif">
+</body>
+<script>
+    toggle = 0;
+
+    function changeo(){
+
+       var a = parseInt(Math.ceil(Math.random() * 255));
+       var b = parseInt(Math.ceil(Math.random() * 255));
+       var c = parseInt(Math.ceil(Math.random() * 255));
+        document.body.style.backgroundColor = 'rgb(' + [a, b, c].join(',') + ')';
+//       if ( toggle == 0 ) {
+//        toggle=1;
+//           document.body.style.backgroundColor = "#fef";
+//       } else {
+//        toggle=0;
+//           document.body.style.backgroundColor = "#fdf";
+//       }
+
+        requestAnimationFrame(changeo);
+   };
+
+
+    changeo();
+
+</script>
+</html>
